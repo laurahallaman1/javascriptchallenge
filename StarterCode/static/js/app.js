@@ -1,6 +1,11 @@
 // from data.js
 var tableData = data;
 
+//console.log data and bring in D3
+
+console.log(tableData);
+var tbody = d3.select("tbody");
+
 // D3 to select HTML nodes, for each one it adds a table row with the table data 
 function appendTable(data) {
     d3.select("tbody").html("");
